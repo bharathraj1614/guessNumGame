@@ -1,0 +1,107 @@
+body {
+  font-family: "VT323", monospace;
+  font-size: larger;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background-color: black;
+  color: rgb(233, 233, 237);
+}
+
+.bgGreen {
+  background-color: green;
+}
+
+input {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  border-radius: 0%;
+  box-shadow: 2px 3px 3px grey;
+}
+input[type="number"] {
+  width: 150px;
+  height: 100px;
+  border: 5px solid rgb(233, 233, 237);
+  color: rgb(233, 233, 237);
+  background-color: rgb(0, 0, 0);
+}
+
+input:focus {
+  outline: none;
+  caret-color: white;
+  box-shadow: 2px 3px 3px grey;
+}
+
+input[type="button"] {
+  width: 120px;
+  height: 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.containerTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.containerTop > div {
+  margin: 30px;
+}
+
+.gameInfoDiv > h2 {
+  margin: 0%;
+}
+
+.containerGameName {
+  text-align: center;
+  font-size: 40px;
+}
+
+.gameName {
+  margin: 0 0 40px 0;
+}
+
+.mysteryNumContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100px;
+}
+.middleLine {
+  color: rgb(233, 233, 237);
+  background-color: rgb(233, 233, 237);
+  height: 10px;
+  width: 100%;
+}
+
+.mysteryNum {
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+  background-color: rgb(233, 233, 237);
+  color: black;
+  width: 150px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.containerBottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.controlDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-message {
+  color: red;
+}

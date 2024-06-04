@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Guess the Num?</title>
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="containerTop">
+      <div class="againBtnDiv">
+        <input class="again" type="button" value="Again!" />
+      </div>
+      <div class="gameInfoDiv">
+        <h2>Number range: 1 - 20</h2>
+      </div>
+    </section>
+
+    <section class="containerGameName">
+      <div class="gameNameDiv">
+        <h1 class="gameName">Guess the Number</h1>
+      </div>
+    </section>
+
+    <section class="mysteryNumContainer">
+      <div class="middleLine"></div>
+      <h1 class="mysteryNum">?</h1>
+    </section>
+
+    <section class="containerBottom">
+      <div class="controlDiv">
+        <input class="num" type="number" name="inp" id="inp" min="1" max="20" />
+        <input class="chk" type="button" value="Check!" />
+        <span class="error-message">Please enter number between 1 - 20</span>
+      </div>
+      <div class="resultDiv">
+        <h3 class="result">Start guessing..</h3>
+        <div class="scoreDiv">
+          <h3 class="score">💯 Score: <span class="crntScore">20</span></h3>
+          <h3 class="score">🥇 High Score: <span class="highScore">0</span></h3>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" async defer></script>
+  </body>
+</html>
