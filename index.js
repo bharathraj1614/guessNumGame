@@ -31,6 +31,7 @@ $(".again").on("click", () => {
   showBtn();
   $(".num").prop("disabled", false);
   $(".num").focus();
+  $(".mysteryNum").text("?");
 });
 
 // function modules
@@ -63,6 +64,7 @@ function triggered() {
     if (hs < crntScore) {
       $(".highScore").text(crntScore);
     }
+    $(".mysteryNum").text(rand);
   } else if (userVal > rand) {
     resultChng("📈 Too high!!");
     reducePoint();
